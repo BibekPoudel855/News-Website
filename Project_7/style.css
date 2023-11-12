@@ -102,7 +102,9 @@ nav{
     border-left: 1px solid rgb(152, 150, 150);
     border-right: 1px solid rgb(152, 150, 150);
 }
-
+.bars-for-nav{
+    display: none;
+}
 .nav-link a{
     color: white;
     transition: all 50ms ease-in 0s;
@@ -150,11 +152,14 @@ nav{
 .nav-search button:active{
     background-color: #9A0000;
 }
-
+#search-for-nav{
+    display: none;
+}
 
 /* Main Code */
 
 main{
+    padding-top: 20px;
     margin-top: 2.5vw;
 }
 .card-container{
@@ -196,3 +201,49 @@ main{
 .news-description{
     margin: 12px 6px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    /* nav*/
+    nav{
+        justify-content: space-between;
+    }
+    .nav-logo h4{
+        display: none;
+    }
+    .nav-link{
+        display: none;
+    }
+    .bars-for-nav{
+        display: inline-block;
+        font-size: 7vw
+    }
+    .nav-search .nav-search-box{
+        display: none;
+        color: white;
+    }
+    .nav-search button{
+        display: none;
+    }
+    #search-for-nav{
+        display: inline-block;
+        font-size: 5vw;
+        margin-right: 2vw;
+    }
+}
+
